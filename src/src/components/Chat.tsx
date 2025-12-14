@@ -17,14 +17,14 @@ export function Chat() {
   };
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-full">
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4">
         {messages.map((message) => (
           <div
             key={message.id}
             className={`mb-4 ${
-              message.role === "assistant" ? "text-blue-600" : "text-gray-800"
+              message.role === "assistant" ? "text-blue-600" : "text-white"
             }`}
           >
             <div className="font-semibold mb-1">
