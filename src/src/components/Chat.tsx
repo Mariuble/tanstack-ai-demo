@@ -1,15 +1,6 @@
 import { useState } from "react";
 import { useChat, fetchServerSentEvents } from "@tanstack/ai-react";
-import {
-  ThumbsUp,
-  ThumbsDown,
-  Upload,
-  RotateCcw,
-  MoreHorizontal,
-  Plus,
-  Mic,
-  Check,
-} from "lucide-react";
+import { Plus, Mic } from "lucide-react";
 
 export function Chat() {
   const [input, setInput] = useState("");
