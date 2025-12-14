@@ -34,10 +34,10 @@ export const Route = createRootRoute({
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
-      <head>
+      <head suppressHydrationWarning>
         <HeadContent />
       </head>
-      <body className="h-full flex flex-col">
+      <body className="h-full flex flex-col bg-[#0a0a0a]">
         {children}
         <TanStackDevtools
           config={{

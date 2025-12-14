@@ -17,7 +17,6 @@ export const Route = createFileRoute("/api/chat")({
             }
           );
         }
-
         const { messages, conversationId } = await request.json();
 
         try {
@@ -32,7 +31,8 @@ export const Route = createFileRoute("/api/chat")({
         } catch (error) {
           return new Response(
             JSON.stringify({
-              error: error instanceof Error ? error.message : "An error occurred",
+              error:
+                error instanceof Error ? error.message : "An error occurred",
             }),
             {
               status: 500,
