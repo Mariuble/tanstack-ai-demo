@@ -53,6 +53,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             },
             AiDevtools,
           ]}
+          // this config is important to connect to the server event bus
+          eventBusConfig={{
+            connectToServerBus: true,
+          }}
         />
         <Scripts />
       </body>
